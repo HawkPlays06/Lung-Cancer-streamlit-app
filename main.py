@@ -10,24 +10,6 @@ model = joblib.load("model_dt.pickle")
 st.title("Patient Response Prediction")
 st.markdown("**Please provide patient information**:")
 
-"""
-gender
-age group
-race
-histology
-smoker
-background
-stage
-marker present
-marker
-result
-treatment
-
-number of family members with lung
-number of comorbidities
-
-"""
-
 sex = st.selectbox("Sex", ["female", "male"])
 age = st.selectbox("Age group", ["30 - 49", "49 - 64", "64 - 90"])
 race = st.selectbox("Race", ["Caucasian", "Latin American", "African", "Asian"])
